@@ -164,7 +164,7 @@ class PermissionRequiredMixin(object):
 
         :param request: Original request.
         """
-        obj = self.get_permission_object()
+        obj = None
 
 
         forbidden = get_403_or_None(request,
